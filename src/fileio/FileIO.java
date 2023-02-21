@@ -95,16 +95,16 @@ public class FileIO {
             ArrayList<String> old_data =new ArrayList<>();
 
             while (dataReader.hasNextLine()) {
-                old_data.add(dataReader.nextLine());
+                old_data.add(dataReader.nextLine()); //Storing all lines in array
             }
 
-            if(index<old_data.size())
+            if(index<old_data.size()) //Checking if line-number out of index
             {
                 old_data.set(index,data);
                 StringBuilder newData = new StringBuilder();
                 for(String i:old_data)
                 {
-                    newData.append(i+"\n");
+                    newData.append(i+"\n"); //Appending from array to a string
                 }
                 FileWriter file_writer = new FileWriter(filePath);
 

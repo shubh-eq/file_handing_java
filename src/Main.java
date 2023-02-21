@@ -25,10 +25,10 @@ public class Main {
         FileIO.readFile(filePathTxt);
 
         //Update by line
-//        FileIO.updateLineInFile(filePathTxt,newData,1);
+        FileIO.updateLineInFile(filePathTxt,newData,1);
 
         //Deleting File
-//        FileIO.deleteAFile(filePathTxt);
+        FileIO.deleteAFile(filePathTxt);
 
         //JSON Operation
 
